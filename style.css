@@ -3,10 +3,13 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body,
-html {
+html,body
+{
   font-family: "Roboto", sans-serif;
+
 }
+
+
 h2 {
   text-align: center;
   padding: 30px;
@@ -16,7 +19,9 @@ h2 {
 #navbar {
   display: flex;
   background-color: rgb(66, 68, 70);
-  height: 60px;
+  /* height: 60px; */
+  height: auto;
+  width: auto;
 }
 #navbar a {
   color: wheat;
@@ -127,10 +132,26 @@ li {
 
 #bestsellers {
   display: flex;
-  height: 360px;
+  height: auto;
   margin: 2rem;
   padding: 1.5rem;
 }
+
+
+@media (max-width: 811px) {
+  #bestsellers {
+    display: grid;
+   
+   grid-template-columns: auto auto;
+    /* margin: auto; */
+  }
+  #bestsellers .card{
+    max-width: 20rem;
+    height: auto;
+  }
+
+}
+
 #heading {
   color: black;
   font-size: 30px;
@@ -150,7 +171,7 @@ li {
   height: 400px;
   width: 300px;
   top: 0px;
-  left: 0px;
+  left: -193px;
   z-index: 1;
   display: inline-block;
 }
@@ -160,7 +181,9 @@ li {
   height: 400px;
   width: 300px;
   top: 0px;
-  left: 20px;
+  left: -193px;
+  /* left: 20px; */
+  left: -162px;
   z-index: -1;
   display: inline-block;
 }
@@ -171,18 +194,26 @@ li {
   height: 400px;
   width: 300px;
   top: 0px;
-  left: 50px;
+  left: -131px;
+  /* left: 50px; */
   z-index: -2;
 }
 
 #image_swap {
   position: relative;
   height: 500px;
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
   margin: 40px;
-  margin-top: 210px;
+  /* margin-top: 210px; */
+  border: 2px solid red;
 }
 
+#image{
+  display: flex;
+  position: relative;
+
+}
 #pic_titles {
   position: absolute;
   right: 0px;
