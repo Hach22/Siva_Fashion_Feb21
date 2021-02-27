@@ -2,97 +2,108 @@
 <html lang="en">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Siva Fashion</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
 
 
 <body>
-    <nav id="navbar">
-        <div>
-            <a href="./index.html"><img id="logo" src="./images/Home/logo3.png" alt=""></a>
-        </div>
-        <div id="list">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="false" aria-expanded="false">Categories</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: black;">
-                        <a class="dropdown-item" href="./kids.html">Kids</a>
-                        <a class="dropdown-item" href="./women.html">Women</a>
-                        <a class="dropdown-item" href="./men.html">Men</a>
+    <div class="parent">
+        <header>
+
+
+            <nav id="navbar">
+                <div>
+                    <a href="./index.html"><img id="logo" src="./images/Home/logo3.png" alt=""></a>
+                </div>
+                <div id="list">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="false" aria-expanded="false">Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="background-color: black;">
+                                <a class="dropdown-item" href="./kids.html">Kids</a>
+                                <a class="dropdown-item" href="./women.html">Women</a>
+                                <a class="dropdown-item" href="./men.html">Men</a>
+                            </div>
+
+
+                        <li><a href="./cart.html">Cart</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div id="women_section">
+                <aside>
+                    <h4>Search Filters</h4>
+                    <div id="womenform">
+                        <form>
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select class="form-control" id="category">
+                                    <option value="all">All</option>
+                                    <option value="tshirts">T-Shirts</option>
+                                    <option value="pants">Pants</option>
+                                    <option value="hats">Hats</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Price-Range</label>
+                                <select class="form-control" id="price">
+                                    <option value="0">0-10</option>
+                                    <option value="10">10-20</option>
+                                    <option value="20">20-30</option>
+                                </select>
+                            </div>
+                            <button type="button" id="btn" class="btn btn-primary">Search</button>
+                        </form>
                     </div>
 
+                </aside>
 
-                <li><a href="./cart.html">Cart</a></li>
-            </ul>
 
-        </div>
-    </nav>
-
-    <div id="women_section">
-        <aside>
-            <h4>Search Filters</h4>
-            <div id="womenform">
-                <form>
-                    <div class="form-group">
-                        <label for="category">Category</label>
-                        <select class="form-control" id="category">
-                            <option value="all">All</option>
-                            <option value ="tshirts">T-Shirts</option>
-                            <option value="pants">Pants</option>
-                            <option value="hats">Hats</option>
-                        </select>
+                <div id="women_banner">
+                    <div>
+                        <img src="./images/Women_page/banner/Women_Banner1.PNG" alt="">
                     </div>
-                    <div class="form-group">
-                        <label for="price">Price-Range</label>
-                        <select class="form-control" id="price">
-                            <option value="0">0-10</option>
-                            <option value="10">10-20</option>
-                            <option value="20">20-30</option>
-                        </select>
+                    <div>
+                        <img src="./images/Women_page/banner/Women_Banner2.PNG" alt="">
                     </div>
-                    <button type="button" id="btn" class="btn btn-primary">Search</button>
-                </form>
+                    <div>
+                        <img src="./images/Women_page/banner/Women_Banner4.PNG" alt="">
+                    </div>
+                </div>
+
+
+                <div id="women_leftside">
+                    <div id="women_allprod">
+                    </div>
+                </div>
+
             </div>
 
-        </aside>
 
 
-        <div id="women_banner">
-            <div>
-                <img src="./images/Women_page/banner/Women_Banner1.PNG" alt="">
-            </div>
-            <div>
-                <img src="./images/Women_page/banner/Women_Banner2.PNG" alt="">
-            </div>
-            <div>
-                <img src="./images/Women_page/banner/Women_Banner4.PNG" alt="">
-            </div>
-        </div>
-
-
-        <div id="women_leftside">
-            <div id="women_allprod">
-            </div>
-        </div>
-
-    </div>
-
-
-
+        </main>
         <footer class="text-gray-700 body-font">
             <div class="container px-1 py-1 mx-auto flex items-center sm:flex-row flex-col">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" style="text-decoration: none;">
-                 
-                    <span class="ml-3 text-xl" style="color: blanchedalmond;text-decoration: none;;">Siva's Fashion</span>
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                    style="text-decoration: none;">
+
+                    <span class="ml-3 text-xl" style="color: blanchedalmond;text-decoration: none;;">Siva's
+                        Fashion</span>
                 </a>
                 <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
                     2020 Siva's Fashion. All Rights Reserved.
@@ -100,14 +111,14 @@
 
 
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                      <a href="https://facebook.com" target="_blank" class="text-gray-500">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    <a href="https://facebook.com" target="_blank" class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z">
                             </path>
-                            
+
                         </svg>
-                    
+
                     </a>
 
                     <a href="https://twitter.com" target="_blank" class="ml-3 text-gray-500">
@@ -137,11 +148,12 @@
                 </span>
             </div>
         </footer>
+    </div>
 
-  
 
 
-    
+
+
     <script src="scripts/women.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
