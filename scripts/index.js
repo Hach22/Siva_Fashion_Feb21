@@ -1,4 +1,4 @@
-console.log("hekllo")
+
 
 const kids = document.getElementsByClassName("pic_head")[0];
 const women = document.getElementsByClassName("pic_head")[1];
